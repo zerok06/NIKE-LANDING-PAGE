@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Poppins', sans-serif;*/
+.social__container {
+  position: fixed;
+  left: 0;
+  top: calc((100vh / 2) - 125px);
+  display: flex;
+  flex-direction: column;
+}
+.social__container a {
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s width ease-in-out;
+}
+.social__container a:nth-child(1) {
+  background: #3b5998;
+}
+.social__container a:nth-child(2) {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+.social__container a:nth-child(3) {
+  background: #bb0000;
+}
+.social__container a:nth-child(4) {
+  background: #0088cc;
+}
+.social__container a:nth-child(5) {
+  background: #aad450;
+}
+.social__container > a:hover {
+  width: 70px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.hero__nav {
+  display: flex;
+  padding: 0 7rem;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+}
+.nav__logo > img {
+  height: 80px;
+}
+.hero__main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7rem;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+.box {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  outline: 1px solid red;
+}
+.box:nth-child(2) {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  background: linear-gradient(30deg, #e24d7e, #cbe65b, #45ab9f);
+  top: 25%;
+  height: 50px;
+  width: 50px;
+  left: 10%;
+  animation: 2s floting ease-in-out infinite alternate;
+}
+.box:nth-child(3) {
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  background: linear-gradient(30deg, #e24d7e, #cbe65b, #45ab9f);
+  top: 75%;
+  height: 50px;
+  width: 50px;
+  left: 35%;
+  animation: 2s floting ease-in-out infinite alternate;
+}
+.box:nth-child(4) {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background: linear-gradient(30deg, #e24d7e, #cbe65b, #45ab9f);
+  top: 45%;
+  height: 50px;
+  width: 50px;
+  left: 90%;
+  animation: 2s floting ease-in-out infinite alternate;
+}
+
+.main__right,
+.main__left {
+  flex: 1;
+  position: relative;
+}
+.main__right > img {
+  width: 100%;
+  transform: rotate(-15deg) translateY(-50px);
+}
+.left__tag {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  position: absolute;
+  transform: rotate(-10deg);
+}
+.left__title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 12rem;
+  background: linear-gradient(30deg, #e24d7e, #cbe65b, #45ab9f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.left__paragraph {
+  color: #1c1e1d;
+}
+.left__features {
+  font-size: 1.5rem;
+}
+.color__type {
+  color: #d57f9a;
+}
+.left__reserve {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #1c1e1d;
+  border-radius: 50px;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.features__price {
+  margin-bottom: 2rem;
+}
+.main__features {
+  height: 60vh;
+  width: 100%;
+  padding: 0 10rem;
+  display: grid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30%;
+}
+.features__container {
+  max-height: 100%;
+}
+.dark {
+  background: #000;
+}
+.features__left,
+.features__right {
+  flex: 1;
+}
+.text__white {
+  color: #fff;
+}
+.text__white,
+.text__black {
+  font-size: 1.2rem;
+}
+.features__left > img,
+.features__right > img {
+  height: 55vh;
+}
+.form__reserve {
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__reverse__container {
+  width: 35%;
+}
+.form__reverse__container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form__reverse__container > form > input {
+  padding: 10px 15px;
+  border: none;
+  background: #eee;
+  outline: none;
+}
+.form__reverse__container > form > button {
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+}
+.form__reverse__container > form > button:active {
+  opacity: 0.7;
+}
+.footer {
+  height: 20vh;
+  background-color: #000;
+}
+
+@keyframes floting {
+  0%{
+    transform: rotate(360deg);
+
+  }
+}
